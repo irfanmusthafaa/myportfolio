@@ -43,6 +43,7 @@ export default function ProjectCard({ imgSrc, title, description, repoLink, sour
               <Iconify classes="text-2xl" icon="iconoir:open-new-window" />
             </a>
           )}
+          
         </div>
       )}
     </div>

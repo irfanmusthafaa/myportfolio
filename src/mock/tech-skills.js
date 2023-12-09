@@ -75,7 +75,7 @@ export const FRONTEND_SKILLS = [
     iconClasses: 'text-3xl',
   },
   {
-    label: 'Express (Node.js Framework)',
+    label: 'Express.js',
     icon: 'simple-icons:express',
     iconClasses: 'text-3xl',
   },

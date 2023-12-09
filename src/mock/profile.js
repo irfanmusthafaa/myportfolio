@@ -1,5 +1,9 @@
 export const SOCIAL_LINKS = [
   {
+    link: 'https://wa.me/6289657136350',
+    icon: 'mdi:whatsapp',
+  },
+  {
     link: 'mailto:irfanmustafa2307@gmail.com',
     icon: 'mdi:gmail',
   },
