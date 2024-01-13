@@ -51,7 +51,7 @@ export default function Skills() {
 
         {/* Quote Section  */}
       </section>
-      <div id="works" />
+      {/* <div id="works" /> */}
     </>
   );
 }

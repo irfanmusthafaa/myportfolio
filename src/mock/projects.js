@@ -28,6 +28,21 @@ const getSkillByLabel = (skills, techLabel) => skills.find(({ label }) => label 
 
 export const PROJECTS = [
   {
+    imgSrc: 'https://images2.imgbox.com/c4/dc/LLpVXdcM_o.png',
+    title: 'Tech Academy',
+    techIcons: [
+      getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
+      getSkillByLabel(FRONTEND_SKILLS, 'React.js'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Ant Design'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Tailwind CSS'),
+      getSkillByLabel(BACKEND_SKILLS, 'REST Api'),
+    ],
+    description: `Massive Open Online Course - Final Proyek Studi Independen Binar Academy `,
+    repoLink: 'https://github.com/irfanmusthafaa/final_chapter_team02',
+    sourceLink: 'https://tech-academy-v2.vercel.app/',
+    category: [PROJECT_CATEGORY],
+  },
+  {
     imgSrc: 'https://images2.imgbox.com/62/fb/bvVuqK21_o.png',
     title: 'Movie Box - Watch and Search For Online Movie Lists',
     techIcons: [
