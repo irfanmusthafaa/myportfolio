@@ -2,8 +2,23 @@ import logoBinar from '../assets/images/logo-binar.png';
 import logoShourai from '../assets/images/logo-shourai.png';
 import logoBwa from '../assets/images/logo-bwa.png';
 import logoDicoding from '../assets/images/logo-dicoding.png';
+import logoTelkom from '../assets/images/logo-telkom.png'
 
 export const DATA_EXPERIENCE = [
+  {
+    company: 'Telkom Indonesia',
+    tagline: 'Intern - Kampus Merdeka Batch 6',
+    position: 'Fullstack Developer',
+    year: 'Feb 2024 - Jun 2024',
+    img: logoTelkom,
+    tasks: [
+      'Designing and building a project monitoring website.',
+      'Identifying stakeholder needs and determining necessary features.',
+      'Implementing web design using HTML, CSS, JavaScript, Next.js, Tailwind CSS, and Shadcn UI.',
+      'Creating server, database, and API using Node.js, Express.js, and MySQL.',
+      'Integrating APIs using Axios and Tanstack Query.',
+    ],
+  },
   {
     company: 'Binar Academy',
     tagline: 'Studi Independent Kampus Merdeka Batch 5',
