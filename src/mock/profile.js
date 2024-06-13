@@ -12,7 +12,7 @@ export const SOCIAL_LINKS = [
     icon: 'akar-icons:github-fill',
   },
   {
-    link: 'https://www.linkedin.com/in/irfan-mustafa-38b67a217/',
+    link: 'https://www.linkedin.com/in/irfan-mustafa-dev/',
     icon: 'akar-icons:linkedin-fill',
   },
 ];
