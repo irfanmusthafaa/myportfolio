@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Typewriter, Cursor } from 'react-simple-typewriter';
 // components
 import SocialLinks from '../components/social/SocialLinks';
-import mainImg from '../assets/images/profil-circle.png';
+import mainImg from '../assets/images/img-profil1.png';
 // other
 import { aboutParagraph, HERO_TITLES } from '../mock/profile';
 import { ScrollContext } from '../context/ScrollContext';

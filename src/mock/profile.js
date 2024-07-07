@@ -4,7 +4,7 @@ export const SOCIAL_LINKS = [
     icon: 'mdi:whatsapp',
   },
   {
-    link: 'mailto:irfanmustafa2307@gmail.com',
+    link: 'mailto:irfanmustafadev@gmail.com',
     icon: 'mdi:gmail',
   },
   {
@@ -12,7 +12,7 @@ export const SOCIAL_LINKS = [
     icon: 'akar-icons:github-fill',
   },
   {
-    link: 'https://www.linkedin.com/in/irfan-mustafa-dev/',
+    link: 'https://www.linkedin.com/in/irfanmustafadev/',
     icon: 'akar-icons:linkedin-fill',
   },
 ];
