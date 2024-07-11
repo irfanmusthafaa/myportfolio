@@ -61,7 +61,8 @@ export default function Contact() {
                   id="name"
                   required
                   placeholder="Full Name"
-                  name="user_name"
+                  // name="user_name"
+                  name="from_name"
                   className="w-full rounded border border-primary-700/70 bg-primary-100/20 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:ring-1 focus:ring-primary-700/70 dark:border-primary-300/50 dark:bg-primary-300/10 dark:focus:ring-primary-300/50"
                 />
               </div>
@@ -74,7 +75,21 @@ export default function Contact() {
                   id="email"
                   required
                   placeholder="email@example.com"
-                  name="user_email"
+                  // name="user_email"
+                  name="reply_to"
+                  className="w-full rounded border border-primary-700/70 bg-primary-100/20 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:ring-1 focus:ring-primary-700/70 dark:border-primary-300/50 dark:bg-primary-300/10 dark:focus:ring-primary-300/50"
+                />
+              </div>
+              <div className="w-full p-2 sm:w-full">
+                <label htmlFor="email" className="text-sm leading-7">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  required
+                  placeholder="Your subject"
+                  name="subject_email"
                   className="w-full rounded border border-primary-700/70 bg-primary-100/20 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:ring-1 focus:ring-primary-700/70 dark:border-primary-300/50 dark:bg-primary-300/10 dark:focus:ring-primary-300/50"
                 />
               </div>

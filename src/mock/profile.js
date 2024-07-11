@@ -23,6 +23,6 @@ export const aboutParagraph =
   '🚀 Highly Motivated and Enthusiastic Front End Developer with Experience in Designing, Developing, and Maintaining Web Applications Using Technologies Such as React js';
 // 'Highly motivated and enthusiastic Full Stack Developer with experience in designing, developing and maintaining web applications using technologies such as JavaScript, React, Node.js. ';
 
-export const contactEmail = 'irfanmustafa2307@gmail.com';
+export const contactEmail = 'irfanmustafadev@gmail.com';
 
 export const documentTitle = 'Hello I am Irfan Mustafa | Front End Developer | Javascript Enthusiast';
