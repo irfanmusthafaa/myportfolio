@@ -7,6 +7,7 @@ import HeadingAnimate from '../components/animate/HeadingAnimate';
 import LoadAnimate from '../components/animate/LoadAnimate';
 // mock
 import { contactEmail } from '../mock/profile';
+import {toast } from 'react-toastify';
 
 // ----------------------------------------------------------------------
 
@@ -27,10 +28,14 @@ export default function Contact() {
         formRef.current,
         process.env.PUBLIC_KEY
       );
+
+      toast.success('Your message has been sent successfully!');
     } catch (error) {
       // intentional
+      toast.error('Failed to send your message. Please try again.');
     } finally {
       setIsSending(false);
+      
     }
   };
   return (
