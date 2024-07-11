@@ -93,7 +93,7 @@ export default function Contact() {
                   type="text"
                   id="subject"
                   required
-                  placeholder="Your subject"
+                  placeholder="Subject"
                   name="subject_email"
                   className="w-full rounded border border-primary-700/70 bg-primary-100/20 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:ring-1 focus:ring-primary-700/70 dark:border-primary-300/50 dark:bg-primary-300/10 dark:focus:ring-primary-300/50"
                 />
