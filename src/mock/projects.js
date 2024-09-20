@@ -28,6 +28,36 @@ const getSkillByLabel = (skills, techLabel) => skills.find(({ label }) => label 
 
 export const PROJECTS = [
   {
+    imgSrc: 'https://images2.imgbox.com/33/3f/9gQua5l7_o.png',
+    title: 'Sewa Hotel',
+    techIcons: [
+      getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
+      getSkillByLabel(FRONTEND_SKILLS, 'HTML'),
+      getSkillByLabel(FRONTEND_SKILLS, 'CSS'),
+      // getSkillByLabel(FRONTEND_SKILLS, 'Tailwind CSS'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Bootstrap'),
+    ],
+    description: `This project is a website for SewaHotel. The website is designed with a responsive and modern interface, ensuring an optimal user experience on both desktop and mobile devices.`,
+    repoLink: '',
+    sourceLink: 'https://sewahotel-irfandev.vercel.app/',
+    category: [PROJECT_CATEGORY],
+  },
+  {
+    imgSrc: 'https://images2.imgbox.com/d2/fb/A5hFgRad_o.png',
+    title: 'StartUp Website',
+    techIcons: [
+      getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
+      getSkillByLabel(FRONTEND_SKILLS, 'HTML'),
+      getSkillByLabel(FRONTEND_SKILLS, 'CSS'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Bootstrap'),
+      // getSkillByLabel(BACKEND_SKILLS, 'REST Api'),
+    ],
+    description: `This project is a website for Startup. The website is designed with a responsive and modern interface, ensuring an optimal user experience on both desktop and mobile devices.`,
+    repoLink: '',
+    sourceLink: 'https://startup-website-irfandev.vercel.app/',
+    category: [PROJECT_CATEGORY],
+  },
+  {
     imgSrc: 'https://images2.imgbox.com/c4/dc/LLpVXdcM_o.png',
     title: 'Tech Academy',
     techIcons: [
