@@ -2,9 +2,23 @@ import logoBinar from '../assets/images/logo-binar.png';
 import logoShourai from '../assets/images/logo-shourai.png';
 import logoBwa from '../assets/images/logo-bwa.png';
 import logoDicoding from '../assets/images/logo-dicoding.png';
-import logoTelkom from '../assets/images/logo-telkom.png'
+import logoTelkom from '../assets/images/logo-telkom.png';
+import logoNTI from '../assets/images/logo-nti.png';
 
 export const DATA_EXPERIENCE = [
+  {
+    company: 'PT. Neural Technologies Indonesia',
+    tagline: 'Fulltime',
+    position: 'Frontend Engineer',
+    year: 'Okt 2024 - present',
+    img: logoNTI,
+    tasks: [
+      'Develop new web interface features for users.',
+      "Apply web design principles and responsibly ensure that the company's website runs well on multiple devices.",
+      'Design a framework to create user applications that fit the needs of the company.',
+      'Assist in the development of applications and features that will be included on the website and in internal and external functions.',
+    ],
+  },
   {
     company: 'Telkom Indonesia',
     tagline: 'Intern - Kampus Merdeka Batch 6',
