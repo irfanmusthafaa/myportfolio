@@ -31,7 +31,7 @@ export default function HomeHero() {
             type: 'spring',
             bounce: 0.5,
             duration: 3,
-            delay: 1.7,
+            delay: 1.7, 
           }}
           viewport={{ once: true }}
         >

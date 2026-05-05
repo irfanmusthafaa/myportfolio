@@ -23,26 +23,22 @@ export default function Skills() {
 
         {/* Frontend Development */}
         <LoadAnimate amount={0}>
-          <div className="container mx-auto my-5 flex flex-col items-center p-5 md:flex-row">
-            <div className="mb-10 md:mb-0 md:w-1/2 lg:w-full lg:max-w-lg">
+          <div className="container mx-auto mt-12 mb-24 flex flex-col items-center gap-12 px-4 md:flex-row md:items-start lg:gap-20">
+            {/* Animation Side */}
+            <div className="w-full max-w-sm md:w-1/3 lg:max-w-md">
               <AnimatedLottie animationDataFile={codingAnimationData} />
             </div>
-            <div className="flex flex-col items-center text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:flex-grow lg:pl-24">
-              <div className="my-3 flex flex-wrap items-center justify-items-center gap-x-4 gap-y-7 text-center sm:gap-x-7">
+
+            {/* Skills Grid Side */}
+            <div className="w-full flex-1 md:w-2/3">
+              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
                 {FRONTEND_SKILLS.map(({ label, icon, iconClasses }, i) => (
                   <TechSkillIcon
                     key={`frontend-skill-${i}`}
-                    popoverId={`frontend-skill-${i}`}
                     icon={icon}
                     iconClasses={iconClasses}
                     label={label}
                   />
-                ))}
-              </div>
-              {/* Description Part  */}
-              <div className="mt-7 w-full space-y-5">
-                {FRONTEND_DESCRIPTIONS.map((paragraph, i) => (
-                  <ListItem key={`frontend-des-${i}`} paragraph={paragraph} />
                 ))}
               </div>
             </div>

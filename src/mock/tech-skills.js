@@ -148,9 +148,4 @@ export const BACKEND_SKILLS = [
   },
 ];
 
-export const FRONTEND_DESCRIPTIONS = [
-  'Building  interactive user interfaces using React js.',
-  'Creating Reusable UI Components for Efficiency',
-  'Proficiently Integrating APIs for Dynamic Interfaces.',
-  'Building responsive Web Applications.',
-];
+export const FRONTEND_DESCRIPTIONS = [];

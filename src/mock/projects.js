@@ -1,5 +1,13 @@
 import { BACKEND_SKILLS, FRONTEND_SKILLS } from './tech-skills';
 
+import imgRoamer from '../assets/images/img-work-roamer.png';
+import imgMarket from '../assets/images/img-work-landscape.png';
+import imgEvent from '../assets/images/img-work-event.png';
+import imgTopApps from '../assets/images/img-work-topapps.png';
+import imgBig from '../assets/images/img-work-big.png';
+import imgAlert from '../assets/images/img-work-alert.png';
+import imgMeasurement from '../assets/images/img-work-measurement.png';
+
 export const PROJECT_CATEGORY = {
   ALL: 'all',
   FULL_STACK: 'full-stack',
@@ -28,7 +36,7 @@ const getSkillByLabel = (skills, techLabel) => skills.find(({ label }) => label 
 
 export const PROJECTS = [
   {
-    imgSrc: 'https://images2.imgbox.com/33/3f/9gQua5l7_o.png',
+    imgSrc: imgRoamer,
     title: 'Sewa Hotel',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
@@ -40,10 +48,10 @@ export const PROJECTS = [
     description: `This project is a website for SewaHotel. The website is designed with a responsive and modern interface, ensuring an optimal user experience on both desktop and mobile devices.`,
     repoLink: '',
     sourceLink: 'https://sewahotel-irfandev.vercel.app/',
-    category: [PROJECT_CATEGORY],
+    category: [PROJECT_CATEGORY.ALL],
   },
   {
-    imgSrc: 'https://images2.imgbox.com/d2/fb/A5hFgRad_o.png',
+    imgSrc: imgEvent,
     title: 'StartUp Website',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
@@ -55,10 +63,10 @@ export const PROJECTS = [
     description: `This project is a website for Startup. The website is designed with a responsive and modern interface, ensuring an optimal user experience on both desktop and mobile devices.`,
     repoLink: '',
     sourceLink: 'https://startup-website-irfandev.vercel.app/',
-    category: [PROJECT_CATEGORY],
+    category: [PROJECT_CATEGORY.ALL],
   },
   {
-    imgSrc: 'https://images2.imgbox.com/c4/dc/LLpVXdcM_o.png',
+    imgSrc: imgTopApps,
     title: 'Tech Academy',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
@@ -71,10 +79,10 @@ export const PROJECTS = [
     repoLink: 'https://github.com/irfanmusthafaa/final_chapter_team02',
     // sourceLink: 'https://tech-academy-v2.vercel.app/',
     sourceLink: '',
-    category: [PROJECT_CATEGORY],
+    category: [PROJECT_CATEGORY.ALL],
   },
   {
-    imgSrc: 'https://images2.imgbox.com/6f/aa/VnmXK1V0_o.png',
+    imgSrc: imgBig,
     title: 'Tech New Student Admission System',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'Next.js'),
@@ -88,10 +96,10 @@ export const PROJECTS = [
     description: `This project is my final assignment at my campus with a case study at the Young Tahfizh Center Indonesia`,
     repoLink: 'https://github.com/irfanmusthafaa/psb_ytc_nextjs',
     sourceLink: '',
-    category: [PROJECT_CATEGORY],
+    category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
-    imgSrc: 'https://images2.imgbox.com/3e/51/ZrcvhRd2_o.png',
+    imgSrc: imgMarket,
     title: 'Project Monitoring Profit+',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'Next.js'),
@@ -105,10 +113,10 @@ export const PROJECTS = [
     description: `This website will make it easier for the GTOM division to monitor projects at Telkom Indonesia`,
     repoLink: '',
     sourceLink: 'https://drive.google.com/file/d/1WpJv_s1Odj1FEQxmnyJIqtYnRbh2tdLf/view?usp=sharing',
-    category: [PROJECT_CATEGORY],
+    category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
-    imgSrc: 'https://images2.imgbox.com/62/fb/bvVuqK21_o.png',
+    imgSrc: imgAlert,
     title: 'Movie Box - Watch and Search For Online Movie Lists',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
@@ -120,10 +128,10 @@ export const PROJECTS = [
     description: `Explore various movie lists online, enjoy exclusive trailers, and find recommendations tailored to your preferences. It is build with React Js, Tailwind, Redux, oAuth.`,
     repoLink: 'https://github.com/irfanmusthafaa/movie-with-redux',
     sourceLink: 'https://movie-box-c6.vercel.app/',
-    category: [PROJECT_CATEGORY],
+    category: [PROJECT_CATEGORY.ALL],
   },
   {
-    imgSrc: 'https://images2.imgbox.com/25/52/BRBiurAm_o.png',
+    imgSrc: imgMeasurement,
     title: 'Todo List - Efficient Task Management',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'HTML'),
@@ -135,7 +143,7 @@ export const PROJECTS = [
     description: `Organize, Prioritize, and Conquer your task with Todo List Website ! Its build with React Js, Tailwind`,
     repoLink: 'https://github.com/irfanmusthafaa/todo-list',
     sourceLink: 'https://todo-list-improject.vercel.app/',
-    category: [PROJECT_CATEGORY],
+    category: [PROJECT_CATEGORY.ALL],
   },
   {
     imgSrc: 'https://images2.imgbox.com/27/cb/g2K3ZDci_o.png',

@@ -6,46 +6,65 @@ import Iconify from '../Iconify';
 
 export default function ProjectCard({ imgSrc, title, description, repoLink, sourceLink, techIcons }) {
   return (
-    <div className="relative flex max-w-xs flex-col rounded-lg border border-gray-200 shadow-md dark:border-gray-700 dark:bg-neutral-800/70">
-      <img className="h-[150px] w-full rounded-t-lg object-cover" src={imgSrc} alt={title} />
+    <div className="group relative flex w-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300  hover:shadow-4xl dark:border-gray-700 dark:bg-neutral-900/80">
+      {/* Image Container */}
+      <div className="relative h-64 w-full overflow-hidden">
+        <img
+          className="h-full w-full object-cover"
+          src={imgSrc?.src || imgSrc}
+          alt={title}
+        />
+        {/* Overlay for better link visibility if needed */}
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent group-hover:from-black/40 transition-colors duration-300" /> */}
+      </div>
 
-      <div className="p-5">
-        <h1 className="mb-2 text-lg font-semibold  text-gray-900 dark:text-white">{title}</h1>
-        <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">{description}</p>
+      <div className="flex flex-1 flex-col p-6">
+        <h3 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+          {title}
+        </h3>
+        <p className="mb-6 flex-1 text-sm font-normal leading-relaxed text-gray-600 dark:text-gray-400 line-clamp-3">
+          {description}
+        </p>
 
+        {/* Tech Stack - Text Pills */}
         {techIcons && techIcons.length > 0 && (
-          <div className="mt-5 mb-7 flex flex-wrap gap-5">
-            {techIcons.map(({ icon }, i) => (
-              <Iconify key={`icon-${i}`} classes="text-2xl opacity-80" icon={icon} />
+          <div className="mb-6 flex flex-wrap gap-2">
+            {techIcons.map((tech, i) => (
+              <span
+                key={`tech-${i}`}
+                className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-600 dark:border-gray-700 dark:bg-neutral-800 dark:text-gray-300 dark:hover:bg-neutral-700 dark:hover:text-primary-300"
+              >
+                {tech.label}
+              </span>
             ))}
           </div>
         )}
-      </div>
-      {(sourceLink !== '' || repoLink !== '') && (
-        <div className="absolute bottom-5 right-5 flex items-center space-x-10">
-          {repoLink !== '' && (
+
+        {/* <div className="flex items-center justify-end gap-5 border-t border-gray-100 pt-4 dark:border-gray-800">
+          {repoLink && (
             <a
               href={repoLink}
               target="_blank"
               rel="noreferrer"
-              className="transform transition-all duration-200 hover:scale-110 hover:text-primary-600 dark:hover:text-primary-300"
+              title="GitHub Repository"
+              className="text-gray-500 transition-colors hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-300"
             >
               <Iconify classes="text-2xl" icon="akar-icons:github-fill" />
             </a>
           )}
-          {sourceLink !== '' && (
+          {sourceLink && (
             <a
               href={sourceLink}
               target="_blank"
               rel="noreferrer"
-              className="transform transition-all duration-200 hover:scale-110 hover:text-primary-600 dark:hover:text-primary-300"
+              title="Live Demo"
+              className="text-gray-500 transition-colors hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-300"
             >
               <Iconify classes="text-2xl" icon="iconoir:open-new-window" />
             </a>
           )}
-          
-        </div>
-      )}
+        </div> */}
+      </div>
     </div>
   );
 }

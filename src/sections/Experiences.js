@@ -11,23 +11,24 @@ import { DATA_EXPERIENCE } from '../mock/experience';
 export const Experiences = () => {
   return (
     <>
-      <section className="container mx-auto mt-16 pt-16 text-center sm:mt-10">
-        <HeadingAnimate>
-          <h2 className="mb-5 font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
-            Experiences
-          </h2>
-        </HeadingAnimate>
+      <section className="container mx-auto mt-24 px-4 pt-16">
+        <div className="flex flex-col items-center text-center space-y-4 mb-16">
+          <HeadingAnimate>
+            <h2 className="font-lato text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
+              Work Experience
+            </h2>
+          </HeadingAnimate>
+          <p className="max-w-2xl text-lg text-gray-600 dark:text-gray-400">
+            A journey through my professional career and the impact I've made at each role.
+          </p>
+        </div>
 
-        {/* Frontend Development */}
         <LoadAnimate amount={0}>
-          <div className="container my-5 flex w-full flex-col items-center p-5 ">
-            <div className="flex w-full flex-col  ">
-              <div className="mt-7 w-full space-y-5">
-                {/* <ListExperience /> */}
-                {DATA_EXPERIENCE.map((listExperience, i) => (
-                  <ListExperience key={`frontend-des-${i}`} data={listExperience} />
-                ))}
-              </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col space-y-2">
+              {DATA_EXPERIENCE.map((listExperience, i) => (
+                <ListExperience key={`experience-${i}`} data={listExperience} />
+              ))}
             </div>
           </div>
         </LoadAnimate>

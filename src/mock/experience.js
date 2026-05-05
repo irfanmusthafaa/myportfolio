@@ -12,6 +12,7 @@ export const DATA_EXPERIENCE = [
     position: 'Frontend Engineer',
     year: 'Okt 2024 - present',
     img: logoNTI,
+    skills: ['React', 'Tailwind CSS', 'Javascript', 'UI/UX', 'Responsive Design'],
     tasks: [
       'Develop new web interface features for users.',
       "Apply web design principles and responsibly ensure that the company's website runs well on multiple devices.",
@@ -25,6 +26,7 @@ export const DATA_EXPERIENCE = [
     position: 'Fullstack Developer',
     year: 'Feb 2024 - Jun 2024',
     img: logoTelkom,
+    skills: ['Next.js', 'Tailwind CSS', 'Shadcn UI', 'Node.js', 'Express.js', 'MySQL', 'Tanstack Query'],
     tasks: [
       'Designing and building a project monitoring website.',
       'Identifying stakeholder needs and determining necessary features.',
@@ -39,6 +41,7 @@ export const DATA_EXPERIENCE = [
     position: 'Front End Developer',
     year: 'Aug 2023 - Jan 2024',
     img: logoBinar,
+    skills: ['ReactJS', 'Redux', 'JWT', 'Google OAuth', 'Tailwind CSS', 'Vercel'],
     tasks: [
       'learn front-end development, especially in creating UI for web applications using HTML, CSS, Javascript, implement web page creation with the Tailwind CSS framework',
       'learn front end development with the Javascript programming language, create dynamic web displays using ReactJS',
@@ -52,6 +55,7 @@ export const DATA_EXPERIENCE = [
     position: 'Front End Developer',
     year: 'Mar 2023 - Jun 2023',
     img: logoShourai,
+    skills: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     tasks: [
       "Analyzing the company's needs to develop the company profile website",
       'Implementing HTML, CSS, JavaScript, and Bootstrap for front-end development.',
@@ -64,6 +68,7 @@ export const DATA_EXPERIENCE = [
     position: 'Fullstack Javascript Developer',
     year: 'Mar 2021 - Present',
     img: logoBwa,
+    skills: ['Reactjs', 'Next.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
     tasks: [
       ' Learn to use Library Reactjs and Next JS',
       'Learn Make API with Nodejs & Express Js and make databases with noSQL ( Mongo db ) ',
@@ -78,6 +83,7 @@ export const DATA_EXPERIENCE = [
     position: 'Frontend Developer',
     year: 'Dec 2021 - Jul 2021',
     img: logoDicoding,
+    skills: ['HTML', 'CSS', 'Javascript', 'PWA'],
     tasks: [
       'Learn HTML, CSS, Javascript',
       ' Learn basic and fundamental JavaScript and fiture ES6',

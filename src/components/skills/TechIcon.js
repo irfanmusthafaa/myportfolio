@@ -4,20 +4,14 @@ import Iconify from '../Iconify';
 
 // ----------------------------------------------------------------------
 
-export default function TechSkillIcon({ label, proficiency, icon, iconClasses }) {
+export default function TechSkillIcon({ label, icon, iconClasses }) {
   return (
-    <div className="inline-flex h-12 w-12 items-center justify-center rounded-full p-2 shadow-md shadow-neutral-300 dark:shadow-neutral-700">
-      <span className="group relative cursor-pointer">
-        <span className="pointer-events-none absolute -top-[3rem] left-1/2 z-[1000] w-32 min-w-fit -translate-x-1/2 whitespace-nowrap rounded-xl bg-neutral-700 px-3 py-1 opacity-0 transition before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:border-[6px] before:border-transparent before:border-t-neutral-700 before:content-[''] group-hover:opacity-100 dark:bg-neutral-700 dark:before:border-t-neutral-700">
-          <div className="mb-2 mt-1 flex items-center justify-between">
-            <div className="text-left text-xs  text-neutral-50"> {label}</div>
-            <span className="ml-2 text-xs text-neutral-50">{proficiency}</span>
-          </div>
-          {/* <div className="mb-4 h-2.5 w-full rounded-full bg-neutral-50">
-            <div className="h-2.5 rounded-full bg-primary-400" style={{ width: proficiency }} />
-          </div> */}
-        </span>
-        <Iconify icon={icon} classes={iconClasses} />
+    <div className="flex flex-col items-center justify-center gap-3 rounded-xl bg-white p-4 shadow-sm border border-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-md dark:bg-neutral-900/80 dark:border-neutral-800 dark:hover:bg-neutral-900 dark:hover:shadow-neutral-950/50">
+      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-50 p-1.5 dark:bg-neutral-800/50">
+        <Iconify icon={icon} classes={`${iconClasses} text-2xl`} />
+      </div>
+      <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-gray-500 dark:text-gray-400">
+        {label}
       </span>
     </div>
   );
