@@ -39,7 +39,7 @@ export default function Contact() {
     }
   };
   return (
-    <section className="container mx-auto mt-5 px-5 pt-12 pb-10">
+    <section className="container mx-auto max-w-7xl px-5 py-24">
       <div className="mb-12 flex w-full flex-col text-center">
         <HeadingAnimate>
           <h2 className="text-center font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
@@ -53,7 +53,7 @@ export default function Contact() {
           </p>
         </LoadAnimate>
       </div>
-      <div className="mx-auto md:w-2/3 lg:w-1/2">
+      <div className="w-full">
         <LoadAnimate amount={0}>
           <form ref={formRef} onSubmit={sendEmail}>
             <div className="-m-2 flex flex-wrap">

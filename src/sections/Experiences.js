@@ -11,10 +11,10 @@ import { DATA_EXPERIENCE } from '../mock/experience';
 export const Experiences = () => {
   return (
     <>
-      <section className="container mx-auto mt-24 px-4 pt-16">
+      <section className="container mx-auto max-w-7xl px-5 py-24">
         <div className="flex flex-col items-center text-center space-y-4 mb-16">
           <HeadingAnimate>
-            <h2 className="font-lato text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
+           <h2 className="mb-5 font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
               Work Experience
             </h2>
           </HeadingAnimate>

@@ -20,17 +20,17 @@ export const FRONTEND_SKILLS = [
     iconClasses: 'text-2xl',
   },
   {
-    label: 'React.js',
+    label: 'React JS',
     icon: 'vscode-icons:file-type-reactjs',
     iconClasses: 'text-2xl',
   },
   {
-    label: 'Next.js',
+    label: 'Next JS',
     icon: 'cib:next-js',
     iconClasses: 'text-3xl',
   },
   {
-    label: 'Tailwind CSS',
+    label: 'Tailwind',
     icon: 'logos:tailwindcss-icon',
     iconClasses: 'text-2xl',
   },
@@ -39,34 +39,74 @@ export const FRONTEND_SKILLS = [
     icon: 'vscode-icons:file-type-scss2',
     iconClasses: 'text-3xl',
   },
-  {
-    label: 'Bootstrap',
-    icon: 'logos:bootstrap',
-    iconClasses: 'text-2xl',
-  },
+  // {
+  //   label: 'Bootstrap',
+  //   icon: 'logos:bootstrap',
+  //   iconClasses: 'text-2xl',
+  // },
   {
     label: 'Ant Design',
     icon: 'logos:ant-design',
     iconClasses: 'text-2xl',
   },
+  // {
+  //   label: 'React Redux',
+  //   icon: 'logos:redux',
+  //   iconClasses: 'text-3xl',
+  // },
+  // {
+  //   label: 'React Hook',
+  //   icon: 'logos:react',
+  //   iconClasses: 'text-2xl',
+  // },
+  // {
+  //   label: 'React Router',
+  //   icon: 'logos:react-router',
+  //   iconClasses: 'text-xl',
+  // },
+  // {
+  //   label: 'React Query',
+  //   icon: 'logos:react-query-icon',
+  //   iconClasses: 'text-3xl',
+  // },
+  // {
+  //   label: 'React Hook Form',
+  //   icon: 'fluent:form-20-regular',
+  //   iconClasses: 'text-3xl',
+  // },
   {
-    label: 'Redux',
-    icon: 'logos:redux',
+    label: 'Shadcn UI',
+    icon: 'simple-icons:shadcnui',
+    iconClasses: 'text-3xl',
+  },
+  // {
+  //   label: 'Responsive Web Design',
+  //   icon: 'mdi:responsive',
+  //   iconClasses: 'text-3xl',
+  // },
+  {
+    label: 'Web Socket',
+    icon: 'logos:websocket',
     iconClasses: 'text-3xl',
   },
   {
-    label: 'React Router',
-    icon: 'logos:react-router',
-    iconClasses: 'text-xl',
+    label: 'Nginx',
+    icon: 'logos:nginx',
+    iconClasses: 'text-2xl',
   },
   {
-    label: 'React Query',
-    icon: 'logos:react-query-icon',
+    label: 'Mapbox GL',
+    icon: 'logos:mapbox-icon',
+    iconClasses: 'text-2xl',
+  },
+  {
+    label: 'ECharts',
+    icon: 'simple-icons:apacheecharts',
     iconClasses: 'text-3xl',
   },
   {
-    label: 'React Hook Form',
-    icon: 'fluent:form-20-regular',
+    label: 'Git',
+    icon: 'logos:git-icon',
     iconClasses: 'text-3xl',
   },
   {
@@ -94,18 +134,17 @@ export const FRONTEND_SKILLS = [
     icon: 'vscode-icons:file-type-mongo',
     iconClasses: 'text-3xl',
   },
+  // {
+  //   label: 'Github',
+  //   icon: 'akar-icons:github-fill',
+  //   iconClasses: 'text-3xl',
+  // },
 
-  {
-    label: 'Github',
-    icon: 'akar-icons:github-fill',
-    iconClasses: 'text-3xl',
-  },
-
-  {
-    label: 'Vercel',
-    icon: 'logos:vercel-icon',
-    iconClasses: 'text-2xl',
-  },
+  // {
+  //   label: 'Vercel',
+  //   icon: 'logos:vercel-icon',
+  //   iconClasses: 'text-2xl',
+  // },
 ];
 
 export const BACKEND_SKILLS = [

@@ -14,20 +14,24 @@ import codingAnimationData from '../mock/lottie/coding.json';
 export default function Skills() {
   return (
     <>
-      <section className="container mx-auto  pt-16 text-center sm:mt-10">
+      <section className="container mx-auto max-w-7xl px-5 py-24 text-center">
         <HeadingAnimate>
           <h2 className="mb-5 font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
             Specialized Skills
           </h2>
         </HeadingAnimate>
 
+        <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-400 mt-4 mb-12 text-center">
+          A overview of my technical expertise and the tools I use to build high-quality web applications.
+        </p>
+
         {/* Frontend Development */}
         <LoadAnimate amount={0}>
-          <div className="container mx-auto mt-12 mb-24 flex flex-col items-center gap-12 px-4 md:flex-row md:items-start lg:gap-20">
+          <div className="container mx-auto flex flex-col items-start gap-12 md:flex-row md:items-start lg:gap-20">
             {/* Animation Side */}
-            <div className="w-full max-w-sm md:w-1/3 lg:max-w-md">
+            {/* <div className="w-full max-w-sm md:w-1/3 lg:max-w-md">
               <AnimatedLottie animationDataFile={codingAnimationData} />
-            </div>
+            </div> */}
 
             {/* Skills Grid Side */}
             <div className="w-full flex-1 md:w-2/3">

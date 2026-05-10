@@ -8,7 +8,7 @@ export default function ProjectCard({ imgSrc, title, description, repoLink, sour
   return (
     <div className="group relative flex w-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300  hover:shadow-4xl dark:border-gray-700 dark:bg-neutral-900/80">
       {/* Image Container */}
-      <div className="relative h-64 w-full overflow-hidden">
+      <div className="relative h-58 w-full overflow-hidden">
         <img
           className="h-full w-full object-cover"
           src={imgSrc?.src || imgSrc}

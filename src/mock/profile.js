@@ -17,7 +17,7 @@ export const SOCIAL_LINKS = [
   },
 ];
 
-export const HERO_TITLES = ['Irfan Mustafa', 'Front End Developer', 'Javascript Enthusiast'];
+export const HERO_TITLES = ['Irfan Mustafa', 'Front End Developer',];
 
 export const aboutParagraph =
   '🚀 Highly Motivated and Enthusiastic Front End Developer with Experience in Designing, Developing, and Maintaining Web Applications Using Technologies Such as React js';
@@ -25,4 +25,4 @@ export const aboutParagraph =
 
 export const contactEmail = 'irfanmustafadev@gmail.com';
 
-export const documentTitle = 'Hello I am Irfan Mustafa | Front End Developer | Javascript Enthusiast';
+export const documentTitle = 'Hello I am Irfan Mustafa | Front End Developer';
