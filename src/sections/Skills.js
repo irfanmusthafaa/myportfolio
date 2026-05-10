@@ -14,7 +14,7 @@ import codingAnimationData from '../mock/lottie/coding.json';
 export default function Skills() {
   return (
     <>
-      <section className="container mx-auto max-w-7xl px-5 py-24 text-center">
+      <section id="skills" className="container mx-auto max-w-7xl px-5 py-24 text-center">
         <HeadingAnimate>
           <h2 className="mb-5 font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
             Specialized Skills

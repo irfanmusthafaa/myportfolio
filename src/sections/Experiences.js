@@ -11,7 +11,7 @@ import { DATA_EXPERIENCE } from '../mock/experience';
 export const Experiences = () => {
   return (
     <>
-      <section className="container mx-auto max-w-7xl px-5 py-24">
+      <section id="experience" className="container mx-auto max-w-7xl px-5 py-24">
         <div className="flex flex-col items-center text-center space-y-4 mb-16">
           <HeadingAnimate>
            <h2 className="mb-5 font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
@@ -33,7 +33,6 @@ export const Experiences = () => {
           </div>
         </LoadAnimate>
       </section>
-      <div id="works" />
     </>
   );
 };

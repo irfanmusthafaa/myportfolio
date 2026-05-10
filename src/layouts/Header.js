@@ -40,8 +40,13 @@ export default function Header({ darkModeEnabled, toggleMode }) {
               </a>
             </li>
             <li>
+              <a href="#experience" className="text-sm xs:text-base">
+                Experience
+              </a>
+            </li>
+            <li>
               <a href="#works" className="text-sm xs:text-base">
-                Works
+                Projects
               </a>
             </li>
             <li>

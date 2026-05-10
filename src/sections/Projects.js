@@ -13,7 +13,7 @@ export default function Projects() {
 
   return (
     <>
-      <section className="container mx-auto max-w-7xl px-5 py-24 space-y-12">
+      <section id="works" className="container mx-auto max-w-7xl px-5 py-24 space-y-12">
         <div className="flex flex-col items-center text-center space-y-4">
           <HeadingAnimate>
             <h2 className="mb-5 font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
