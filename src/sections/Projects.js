@@ -33,7 +33,6 @@ export default function Projects() {
           </div>
         </LoadAnimate>
       </section>
-      <div id="contact" />
     </>
   );
 }

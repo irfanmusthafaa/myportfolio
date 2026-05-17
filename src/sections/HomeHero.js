@@ -74,7 +74,6 @@ export default function HomeHero() {
       </div>
       <ScrollToTop />
     </section>
-    <div id='skills' />
     </>
    
   );

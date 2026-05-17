@@ -11,7 +11,7 @@ import { FRONTEND_SKILLS } from '../mock/tech-skills';
 export default function Skills() {
   return (
     <>
-      <section id="skills" className="container mx-auto max-w-7xl px-5 py-24 text-center">
+      <section id="skills-old" className="container mx-auto max-w-7xl px-5 py-24 text-center">
         <HeadingAnimate>
           <h2 className="mb-5 font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
             Specialized Skills

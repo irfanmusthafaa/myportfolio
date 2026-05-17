@@ -41,7 +41,7 @@ export default function Contact() {
     }
   };
   return (
-    <section className="container mx-auto max-w-[90%] px-5 py-24">
+    <section id="contact" className="container mx-auto max-w-[90%] px-5 py-24">
       <div className="mb-12 flex w-full flex-col text-center">
         <HeadingAnimate>
           <h2 className="text-center font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
