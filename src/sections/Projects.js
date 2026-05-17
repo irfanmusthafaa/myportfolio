@@ -10,11 +10,10 @@ import { PROJECTS } from '../mock/projects';
 // ----------------------------------------------------------------------
 
 export default function Projects() {
-
   return (
     <>
-      <section id="works" className="container mx-auto max-w-7xl px-5 py-24 space-y-12">
-        <div className="flex flex-col items-center text-center space-y-4">
+      <section id="works" className="container mx-auto max-w-[90%] space-y-12 px-5 py-24">
+        <div className="flex flex-col items-center space-y-4 text-center">
           <HeadingAnimate>
             <h2 className="mb-5 font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
               Featured Projects

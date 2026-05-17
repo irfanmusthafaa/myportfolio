@@ -7,7 +7,7 @@ import HeadingAnimate from '../components/animate/HeadingAnimate';
 import LoadAnimate from '../components/animate/LoadAnimate';
 // mock
 import { contactEmail } from '../mock/profile';
-import {toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 // ----------------------------------------------------------------------
 
@@ -35,11 +35,10 @@ export default function Contact() {
       toast.error('Failed to send your message. Please try again.');
     } finally {
       setIsSending(false);
-      
     }
   };
   return (
-    <section className="container mx-auto max-w-7xl px-5 py-24">
+    <section className="container mx-auto max-w-[90%] px-5 py-24">
       <div className="mb-12 flex w-full flex-col text-center">
         <HeadingAnimate>
           <h2 className="text-center font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">

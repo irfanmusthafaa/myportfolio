@@ -11,10 +11,10 @@ import { DATA_EXPERIENCE } from '../mock/experience';
 export const Experiences = () => {
   return (
     <>
-      <section id="experience" className="container mx-auto max-w-7xl px-5 py-24">
-        <div className="flex flex-col items-center text-center space-y-4 mb-16">
+      <section id="experience" className="container mx-auto max-w-[90%] px-5 py-24">
+        <div className="mb-16 flex flex-col items-center space-y-4 text-center">
           <HeadingAnimate>
-           <h2 className="mb-5 font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
+            <h2 className="mb-5 font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
               Work Experience
             </h2>
           </HeadingAnimate>
@@ -24,7 +24,7 @@ export const Experiences = () => {
         </div>
 
         <LoadAnimate amount={0}>
-          <div className="max-w-4xl mx-auto">
+          <div className="mx-auto w-full">
             <div className="flex flex-col space-y-2">
               {DATA_EXPERIENCE.map((listExperience, i) => (
                 <ListExperience key={`experience-${i}`} data={listExperience} />
