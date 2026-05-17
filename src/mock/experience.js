@@ -1,7 +1,4 @@
 import logoBinar from '../assets/images/logo-binar.png';
-import logoShourai from '../assets/images/logo-shourai.png';
-import logoBwa from '../assets/images/logo-bwa.png';
-import logoDicoding from '../assets/images/logo-dicoding.png';
 import logoTelkom from '../assets/images/logo-telkom.png';
 import logoNTI from '../assets/images/logo-nti.png';
 

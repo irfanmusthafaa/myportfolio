@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Iconify from '../Iconify';
 
 // ----------------------------------------------------------------------
 
-export default function ProjectCard({ imgSrc, title, description, repoLink, sourceLink, techIcons }) {
+export default function ProjectCard({ imgSrc, title, description, techIcons }) {
   return (
     <div className="group relative flex w-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300  hover:shadow-4xl dark:border-gray-700 dark:bg-neutral-900/80">
       {/* Image Container */}
@@ -72,7 +71,7 @@ export default function ProjectCard({ imgSrc, title, description, repoLink, sour
 // ----------------------------------------------------------------------
 
 ProjectCard.propTypes = {
-  imgSrc: PropTypes.string,
+  imgSrc: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   title: PropTypes.string,
   description: PropTypes.string,
   repoLink: PropTypes.string,

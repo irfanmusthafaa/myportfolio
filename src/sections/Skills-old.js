@@ -1,13 +1,10 @@
 import React from 'react';
 // components
-import AnimatedLottie from '../components/Lottie';
 import TechSkillIcon from '../components/skills/TechIcon';
-import ListItem from '../components/skills/ListItem';
 import HeadingAnimate from '../components/animate/HeadingAnimate';
 import LoadAnimate from '../components/animate/LoadAnimate';
 // mock
-import { FRONTEND_DESCRIPTIONS, FRONTEND_SKILLS } from '../mock/tech-skills';
-import codingAnimationData from '../mock/lottie/coding.json';
+import { FRONTEND_SKILLS } from '../mock/tech-skills';
 
 // ----------------------------------------------------------------------
 
@@ -21,7 +18,7 @@ export default function Skills() {
           </h2>
         </HeadingAnimate>
 
-        <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-400 mt-4 mb-12 text-center">
+        <p className="mx-auto mt-4 mb-12 max-w-2xl text-center text-lg text-gray-600 dark:text-gray-400">
           A overview of my technical expertise and the tools I use to build high-quality web applications.
         </p>
 
@@ -37,12 +34,7 @@ export default function Skills() {
             <div className="w-full flex-1 md:w-2/3">
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
                 {FRONTEND_SKILLS.map(({ label, icon, iconClasses }, i) => (
-                  <TechSkillIcon
-                    key={`frontend-skill-${i}`}
-                    icon={icon}
-                    iconClasses={iconClasses}
-                    label={label}
-                  />
+                  <TechSkillIcon key={`frontend-skill-${i}`} icon={icon} iconClasses={iconClasses} label={label} />
                 ))}
               </div>
             </div>

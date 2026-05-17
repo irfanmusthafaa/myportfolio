@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import PropTypes from 'prop-types';
 
 export const ListExperience = ({ data }) => {
   return (
@@ -86,4 +87,16 @@ export const ListExperience = ({ data }) => {
       </div>
     </div>
   );
+};
+
+ListExperience.propTypes = {
+  data: PropTypes.shape({
+    img: PropTypes.any,
+    company: PropTypes.string,
+    tagline: PropTypes.string,
+    position: PropTypes.string,
+    year: PropTypes.string,
+    skills: PropTypes.arrayOf(PropTypes.string),
+    tasks: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
 };

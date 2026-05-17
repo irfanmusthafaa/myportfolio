@@ -9,7 +9,7 @@ import Contact from '../sections/Contact';
 // mock
 import { documentTitle } from '../mock/profile';
 import { Experiences } from '../sections/Experiences';
-import Projects from 'src/sections/Projects';
+import Projects from '../sections/Projects';
 
 // ------------------------------------------------
 

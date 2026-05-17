@@ -1,7 +1,5 @@
 import React from 'react';
 // components
-import AnimatedLottie from '../components/Lottie';
-import ListItem from '../components/skills/ListItem';
 import HeadingAnimate from '../components/animate/HeadingAnimate';
 import LoadAnimate from '../components/animate/LoadAnimate';
 // mock

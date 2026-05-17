@@ -4,7 +4,7 @@ import { ScrollProvider } from '../context/ScrollContext';
 // style
 import '../styles/globals.css';
 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function MyApp({ Component, pageProps }) {

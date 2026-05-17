@@ -1,11 +1,10 @@
-import { BACKEND_SKILLS, FRONTEND_SKILLS } from './tech-skills';
+import { FRONTEND_SKILLS } from './tech-skills';
 
 import imgRoamer from '../assets/images/img-work-roamer.png';
 import imgMarket from '../assets/images/img-work-landscape.png';
 import imgEvent from '../assets/images/img-work-event.png';
 import imgTopApps from '../assets/images/img-work-topapps.png';
 import imgBig from '../assets/images/img-work-big.png';
-import imgAlert from '../assets/images/img-work-alert.png';
 import imgMeasurement from '../assets/images/img-work-measurement.png';
 
 const getSkillByLabel = (skills, techLabel) => skills.find(({ label }) => label === techLabel);
