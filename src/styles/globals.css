@@ -158,3 +158,29 @@ html {
     opacity: 1;
   }
 }
+
+/* Chrome/Safari Autofill Styles Overrides (Light Mode) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #0f172a !important; /* text-slate-900 (charcoal, not pitch black) */
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important; /* clean white background */
+  box-shadow: 0 0 0px 1000px #ffffff inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Dark Mode Autofill Styles Overrides */
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus,
+.dark textarea:-webkit-autofill,
+.dark textarea:-webkit-autofill:hover,
+.dark textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f8fafc !important; /* text-slate-50 */
+  -webkit-box-shadow: 0 0 0px 1000px #162032 inset !important; /* deep primary navy background */
+  box-shadow: 0 0 0px 1000px #162032 inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}

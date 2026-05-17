@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { AnimatePresence, motion } from 'framer-motion';
 // components
 import Iconify from '../components/Iconify';
 import SocialLinks from '../components/social/SocialLinks';
@@ -13,6 +14,7 @@ import { toast } from 'react-toastify';
 
 export default function Contact() {
   const [isSending, setIsSending] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   const formRef = useRef();
 
@@ -23,13 +25,14 @@ export default function Contact() {
       setIsSending(true);
 
       await emailjs.sendForm(
-        process.env.EMAIL_SERVICE_ID,
-        process.env.EMAIL_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
         formRef.current,
-        process.env.PUBLIC_KEY
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
       );
 
-      toast.success('Your message has been sent successfully!');
+      e.target.reset();
+      setShowSuccessModal(true);
     } catch (error) {
       // intentional
       toast.error('Failed to send your message. Please try again.');
@@ -151,6 +154,62 @@ export default function Contact() {
           </form>
         </LoadAnimate>
       </div>
+
+      <AnimatePresence>
+        {showSuccessModal && (
+          <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
+            {/* Backdrop Overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowSuccessModal(false)}
+              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+            />
+
+            {/* Modal Card */}
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.9, opacity: 0, y: 20 }}
+              transition={{ type: 'spring', duration: 0.5 }}
+              className="relative w-full max-w-md overflow-hidden rounded-3xl border border-slate-100 bg-white/95 p-8 text-center shadow-2xl backdrop-blur-md dark:border-neutral-800/80 dark:bg-neutral-900/95"
+            >
+              {/* Animated Glowing Ring & Checkmark Icon */}
+              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-emerald-50 dark:bg-emerald-950/30 ring-8 ring-emerald-100/50 dark:ring-emerald-900/20">
+                <svg
+                  className="h-10 w-10 text-emerald-500 animate-bounce"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="3.5"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+
+              {/* Title */}
+              <h3 className="mb-2 text-2xl font-extrabold tracking-tight text-slate-800 dark:text-neutral-50">
+                Message Sent Successfully!
+              </h3>
+
+              {/* Description */}
+              <p className="mb-6 text-sm leading-relaxed text-slate-500 dark:text-neutral-400">
+                Thank you for reaching out! Your message has been sent successfully, and I will get back to you as soon as possible.
+              </p>
+
+              {/* Dismiss Button ("OK") */}
+              <button
+                type="button"
+                onClick={() => setShowSuccessModal(false)}
+                className="w-full rounded-xl bg-primary-600 px-6 py-3 font-semibold text-white shadow-md shadow-primary-500/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-500/30 focus:outline-none dark:bg-primary-500 dark:hover:bg-primary-600"
+              >
+                OK
+              </button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
